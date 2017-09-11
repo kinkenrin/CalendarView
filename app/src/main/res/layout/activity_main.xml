@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_calendar_header" />
+
+    <com.github.kinkenrin.calendarview.CalendarPickerView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/done_button"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="Done" />
+    </LinearLayout>
+
+
+</LinearLayout>

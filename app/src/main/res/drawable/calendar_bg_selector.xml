@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item app:cv_state_range_middle="true">
+        <color android:color="#d8eced"/>
+    </item>
+    <item android:state_selected="true">
+        <color android:color="#91c7cb"/>
+    </item>
+    <item android:state_pressed="true">
+        <color android:color="#91c7cb"/>
+    </item>
+
+    <item app:cv_state_highlighted="true">
+        <color android:color="#ccffcc"/>
+    </item>
+    <item android:drawable="@drawable/calendar_header_shape" app:cv_state_today="true" />
+    <!--<item>
+        <color android:color="#ccffcc"/>
+    </item>-->
+    <!--<item android:drawable="@drawable/calendar_header_shape" app:cv_state_today="true" />-->
+    <!--<item app:cv_state_current_month="false">
+      <color android:color="@color/calendar_inactive_month_bg"/>
+    </item>
+    <item app:cv_state_highlighted="true">
+      <color android:color="@color/calendar_highlighted_day_bg"/>
+    </item>
+
+    <item>
+      <color android:color="@color/calendar_active_month_bg"/>
+    </item>-->
+</selector>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.kinkenrin.calendarview.CalendarHeaderView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/calendar_header_shape">
+
+    <TextView
+        style="@style/week_header_cell"
+        android:text="日"
+        android:textColor="#f9676f" />
+
+    <TextView
+        style="@style/week_header_cell"
+        android:text="一" />
+
+    <TextView
+        style="@style/week_header_cell"
+        android:text="二" />
+
+    <TextView
+        style="@style/week_header_cell"
+        android:text="三" />
+
+    <TextView
+        style="@style/week_header_cell"
+        android:text="四" />
+
+    <TextView
+        style="@style/week_header_cell"
+        android:text="五" />
+
+    <TextView
+        style="@style/week_header_cell"
+        android:text="六"
+        android:textColor="#f9676f" />
+
+
+</com.github.kinkenrin.calendarview.CalendarHeaderView>
