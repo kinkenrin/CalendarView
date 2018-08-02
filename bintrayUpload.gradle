@@ -122,7 +122,7 @@ bintray {
     configurations = ['archives']
 
     pkg {
-        userOrg = yourOtganizationId
+//        userOrg = yourOtganizationId
         repo = 'maven'
         name = yourProName
         licenses = ['Apache-2.0']

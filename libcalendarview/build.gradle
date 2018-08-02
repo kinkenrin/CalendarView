@@ -30,7 +30,7 @@ ext {
     yourProDesc = 'Android Library'
 
     // 组织id
-    yourOtganizationId = 'keyboardman'
+//    yourOtganizationId = 'keyboardman'
     // bintrayID
     yourId = 'alanking'
     // nickName
