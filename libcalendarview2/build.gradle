@@ -1,0 +1,62 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+ext {
+    // 项目的主页
+    yourSiteUrl = 'https://github.com/kinkenrin/CalendarView'
+    // Git仓库的url
+    yourGitUrl = 'https://github.com/kinkenrin/CalendarView'
+    // issue 地址
+    YourIssueTrackerUrl = 'https://github.com/kinkenrin/CalendarView/issues'
+
+    // 项目的名称，将会显示在bintray
+    yourProName = 'CalendarView'
+    // 项目的描述
+    yourProDesc = 'Android Library'
+
+    // 组织id
+    yourOtganizationId = 'keyboardman'
+    // bintrayID
+    yourId = 'alanking'
+    // nickName
+    yourName = 'alanking'
+    // email
+    yourEmail = 'jinxianlun@gmial.com'
+
+    // 最后生成依赖 compile 'yourGroup:yourArtifactId:yourVersion'
+    // 最后生成依赖 compile 'com.github.kinkenrin:calendarview:1.0-beta1'
+    yourGroup = 'com.github.kinkenrin'
+    //必须要跟modulename一致
+    yourArtifactId = 'libcalendarview2'
+    yourVersion = '1.0-beta5'
+
+
+    // 此文件中存储的是 bintray 的敏感信息，用户名和key
+    // 你需要在该文件中如下声明
+    // bintray.user=xxxx
+    // bintray.apikey=xxxx
+    // 你可以使用项目中的 local.properties
+    yourBintrayUserPath = './local.properties'
+}
+apply from: '../bintrayUpload.gradle'
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+
+    api 'com.android.support:appcompat-v7:25.4.0'
+}
