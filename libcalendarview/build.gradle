@@ -3,7 +3,7 @@ apply plugin: 'com.android.library'
 android {
     compileSdkVersion 25
     defaultConfig {
-        minSdkVersion 15
+        minSdkVersion 11
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -42,8 +42,8 @@ ext {
     // 最后生成依赖 compile 'com.github.kinkenrin:calendarview:1.0-beta1'
     yourGroup = 'com.github.kinkenrin'
     //必须要跟modulename一致
-    yourArtifactId = 'libcalendarview2'
-    yourVersion = '1.0-beta5'
+    yourArtifactId = 'libcalendarview'
+    yourVersion = '1.0'
 
 
     // 此文件中存储的是 bintray 的敏感信息，用户名和key
@@ -54,9 +54,10 @@ ext {
     yourBintrayUserPath = './local.properties'
 }
 apply from: '../bintrayUpload.gradle'
+//apply from: 'https://raw.githubusercontent.com/kinkenrin/CalendarView/master/bintrayUpload.gradle'
 
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
 
-    api 'com.android.support:appcompat-v7:25.4.0'
+    compileOnly 'com.android.support:appcompat-v7:25.4.0'
 }
